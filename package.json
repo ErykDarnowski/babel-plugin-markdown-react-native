@@ -2,8 +2,9 @@
   "name": "babel-plugin-markdown-react-native",
   "version": "1.0.0",
   "description": "Pre-process markdown into React Native components!",
-  "main": "index.js",
+  "main": "src/index.js",
   "scripts": {
+    "build": "babel src -d lib",
     "test": "echo \"Error: no test specified\" && exit 1"
   },
   "repository": {
@@ -21,5 +22,10 @@
   "bugs": {
     "url": "https://github.com/ErykDarnowski/babel-plugin-markdown-react-native/issues"
   },
-  "homepage": "https://github.com/ErykDarnowski/babel-plugin-markdown-react-native#readme"
+  "homepage": "https://github.com/ErykDarnowski/babel-plugin-markdown-react-native#readme",
+  "devDependencies": {
+    "@babel/cli": "^7.18.10",
+    "@babel/core": "^7.18.10",
+    "@babel/preset-env": "^7.18.10"
+  }
 }
